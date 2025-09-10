@@ -4,6 +4,21 @@
         <meta name="viewport" content="width=device-width">
         <title>CIT 3606 Lab 2 JS Intro</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <script>
+            var today = new Date();
+            let hour = today.getHours();
+            if (hour < 12) {
+                alert("Good Morning");
+            } else if (hour < 18){
+                alert("Good Afternoon");
+            }
+            else {
+                alert("Good Evening");
+            }
+            dol = prompt("How many dollars do you want to converts?");
+            var euro = dol * 0.85;
+            alert("This is the amount of euros you will get from a US dollar " + euro);
+        </script>
     </head>
     <body>
       
