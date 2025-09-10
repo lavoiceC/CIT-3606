@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\Owner\\OneDrive\\Documents\\GitHub\\CIT-3606\\Lab 1 HTML\\index.html"
+            "file": "c:\\Users\\Owner\\OneDrive\\Documents\\GitHub\\CIT-3606\\Lab 2 JavaScript Intro\\index.html"
         }
     ]
 }
