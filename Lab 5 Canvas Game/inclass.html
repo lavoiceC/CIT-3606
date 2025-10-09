@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>CIT 3606 Lab </title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+      <canvas id="myCanvas" width="500" height="500" style="border:1px solid black"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillRect( canvas.width/2 - 50, canvas.height/2 - 50, 100, 100 );
+        ctx.fillStyle = 'red';
+        ctx.arc(200, 200, 30, 0, 360);
+        ctx.fill();
+        const myImg = new Image();
+        myImg.src = 'Wallpaper.jpg';
+        myImg.onload = function() {
+            ctx.drawImage(myImg, 10, 10, 100, 100);
+        }
+        myCanvas.onmousedown = function(event) {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            alert("You clicked at " + x + "," + y);
+        }
+        setInterval(drawFunction, );
+        let x = 0;
+        let y = 0;
+        function drawFunction() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(myImg, x, y, 100, 100);
+            
+        }
+        document.keydown = function(event) {
+            if(event.key == 'ArrowUp') y -= 10;
+            if(event.key == 'ArrowDown') y += 10;
+            if(event.key == 'ArrowLeft') x -= 10;
+            if(event.key == 'ArrowRight') x += 10;
+        }
+        </script>
+        
+
+        <script src="script.js"></script> 
+    </body>
+</html>

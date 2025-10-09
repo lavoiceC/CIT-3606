@@ -4,11 +4,31 @@
         <meta name="viewport" content="width=device-width">
         <title>CIT 3606 Lab 4</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        
+
     </head>
     <body>
-      
-      
-     <!-- The JavaScript code is attached at the bottom of the page
+    <h2> Landmark Tour</h2>
+    <img id="myImage" src="myImage/bp.jpg" alt="buckingham palace" width="300px" height="300px" >
+      <br><br/>
+    <div id="description">buckingham palace description placeholder</div>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4721.514471321009!2d-0.1444649235304209!3d51.50136397181184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e1!3m2!1sen!2sus!4v1759412770351!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onclic></iframe>
+    <label><input type = "radio" name='landmark' onclick="Slandmark('bp' )">Buckingham Palace</label>
+    <label><input type="radio" name= 'landmark' onclick="Slandmark('tm')">Taj Mahal</label>
+    <label><input type="radio" name='landmark'onclick="Slandmark('np')">Natural Bridge</label>
+    
+    <br><br/>
+
+    <label for="Size">Image size:</label>
+    <select id="Size" onchange="ImagesSize()">
+      <option value="300px">Small</option>
+      <option value="600px">Medium</option>
+      <option value="900px">Large</option>
+    </select>
+    <br><br/>
+
+    <!-- The JavaScript code is attached at the bottom of the page
            after the page is completely loaded. Write your code in script.js. -->
      <script src="script.js"></script> 
     </body>
